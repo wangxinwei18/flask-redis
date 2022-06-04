@@ -18,9 +18,11 @@ jobs:
         name: Avaliable platforms
         run: echo ${{ steps.buildx.outputs.platforms }} 
       -
-        name: build and push  
-        run:  docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }} >
-              docker buildx ls
+        name: docker login  
+        run:  docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }}
+      - 
+        name: docker ls  
+        run:  docker buildx ls
               
           
 
