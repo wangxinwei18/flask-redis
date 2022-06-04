@@ -12,3 +12,7 @@ $ git commit -m 'your comments'
 $ git branch -M main
 $ git push -u origin main
 
+
+# 解决每次输密码
+$ git config --global credential.helper store
+
