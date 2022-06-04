@@ -26,7 +26,7 @@ jobs:
 
       - 
         name: docker buildx
-        run: docker buildx build --push --platform linux/arm/v7,linux/arm64/v8,linux/arm64 -t wangxinwei18/flask-redis:latest .
+        run: docker buildx build --push --platform linux/arm/v7,linux/arm64/v8,linux/amd64 -t wangxinwei18/flask-redis:latest .
               
           
 
