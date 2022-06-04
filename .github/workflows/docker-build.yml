@@ -19,8 +19,8 @@ jobs:
         run: echo ${{ steps.buildx.outputs.platforms }} 
       -
         name: docker login  
-        run: >
-         docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }} >
+        run: |
+         docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }} 
          docker buildx ls
  #     - 
  #       name: docker ls  
