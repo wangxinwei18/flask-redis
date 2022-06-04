@@ -15,4 +15,7 @@ $ git push -u origin main
 
 # 解决每次输密码
 $ git config --global credential.helper store
+# 第一次输入用户和密码之后不再需要
+
+
 
