@@ -17,5 +17,7 @@ $ git push -u origin main
 $ git config --global credential.helper store
 # 第一次输入用户和密码之后不再需要
 
+test git actions
+
 
 
